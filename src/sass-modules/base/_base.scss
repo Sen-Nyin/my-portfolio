@@ -1,0 +1,24 @@
+:root {
+  --default-text-colour: #555555;
+  // ##########[ FONTS ]
+  font-size: 62.5%;
+  --font-fam-default: 'Merriweather Sans', sans-serif;
+  --fnt-sz-default: 1.6rem;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+  font-family: var(--font-fam-default);
+  font-size: var(--fnt-sz-default);
+  color: var(--default-text-colour);
+}
+
+.placeholder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}

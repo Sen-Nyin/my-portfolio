@@ -1,0 +1,45 @@
+.round {
+  border-radius: 9999rem;
+  padding: 2rem;
+}
+.roundtangle {
+  border-radius: 0.5rem;
+  padding-inline: 4rem;
+  padding-block: 0.8rem;
+}
+
+.btn {
+  cursor: pointer;
+  transition: 0.4s;
+
+  &-slide-ltr {
+    border-width: 2px;
+    border-style: solid;
+    background-size: 210%;
+    background-position: 100%;
+
+    &:hover {
+      color: white;
+      background-position: 0%;
+    }
+    &--red {
+      background-image: linear-gradient(to left, transparent 50%, red 50%);
+      border-color: red;
+    }
+    &--blue {
+      background-image: linear-gradient(to left, transparent 50%, blue 50%);
+      border-color: blue;
+    }
+  }
+  &-slide-rtl {
+    border-width: 2px;
+    background-image: linear-gradient(to right, transparent 50%, red 50%);
+    background-size: 210%;
+    background-position: 0%;
+
+    &:hover {
+      color: white;
+      background-position: 99%;
+    }
+  }
+}
