@@ -1,0 +1,32 @@
+.header {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+  &__main-title {
+    display: grid;
+    gap: 1rem;
+    position: relative;
+
+    font-family: var(--font-fam-heading-main);
+    font-size: var(--font-sz-heading-main);
+    font-weight: var(--fnt-wt-heading-main);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0.9;
+    letter-spacing: 1rem;
+
+    &--flip {
+      transform: rotate(180deg);
+      transform: scale(1, -1);
+      background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0.1)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

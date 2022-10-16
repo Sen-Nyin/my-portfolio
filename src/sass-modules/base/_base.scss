@@ -1,24 +1,46 @@
+@use '../abstract/' as a;
+
 :root {
-  --default-text-colour: #555555;
-  // ##########[ FONTS ]
+  // page control
+
+  --font-fam-default: 'Poppins', sans-serif;
+  --font-sz-default: 1.6rem;
+
+  --font-fam-heading-main: 'Open Sans', sans-serif;
+  --font-sz-heading-main: clamp(2rem, -0.7272727272727271rem + 7.2727272727272725vw, 8rem);
+  --font-wt-heading-main: var(--fnt-wt-800);
+  --font-clr-default: var(--clr-neutral-300);
+
+  // fonts
+
   font-size: 62.5%;
-  --font-fam-default: 'Merriweather Sans', sans-serif;
-  --fnt-sz-default: 1.6rem;
+  --fnt-sz-s: 1.4rem;
+  --fnt-sz-m: 1.6rem;
+  --fnt-wt-300: 300;
+  --fnt-wt-400: 400;
+  --fnt-wt-500: 500;
+  --fnt-wt-800: 800;
+
+  // colours
+
+  --clr-neutral-50: #{a.$neutral-50};
+  --clr-neutral-100: #{a.$neutral-100};
+  --clr-neutral-300: #{a.$neutral-300};
+  --clr-neutral-300: #{a.$neutral-300};
+  --clr-neutral-800: #{a.$neutral-800};
+  --clr-green-900: #{a.$emerald-900};
+  --clr-green-600: #{a.$emerald-600};
+  --clr-teal-600: #{a.$teal-600};
+  --clr-zinc-800: #{a.$zinc-800};
+  --clr-zinc-900: #{a.$zinc-900};
 }
 
 body {
   display: grid;
-  place-items: center;
   min-height: 100vh;
 
   font-family: var(--font-fam-default);
-  font-size: var(--fnt-sz-default);
-  color: var(--default-text-colour);
-}
-
-.placeholder-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
+  font-size: var(--font-sz-default);
+  color: var(--font-clr-default);
+  background: var(--clr-zinc-900);
 }
