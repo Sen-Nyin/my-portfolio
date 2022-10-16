@@ -49,6 +49,7 @@
 body {
   display: grid;
   min-height: 100vh;
+  position: relative;
 
   font-family: var(--font-fam-default);
   font-size: var(--font-sz-default);
