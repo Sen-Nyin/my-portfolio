@@ -5,11 +5,11 @@
 
   --font-fam-default: 'Poppins', sans-serif;
   --font-sz-default: 1.6rem;
+  --font-clr-default: var(--clr-zinc-900);
 
   --font-fam-heading-main: 'Open Sans', sans-serif;
   --font-sz-heading-main: clamp(2rem, -0.7272727272727271rem + 7.2727272727272725vw, 8rem);
   --font-wt-heading-main: var(--fnt-wt-800);
-  --font-clr-default: var(--clr-neutral-300);
 
   // fonts
 
@@ -42,5 +42,5 @@ body {
   font-family: var(--font-fam-default);
   font-size: var(--font-sz-default);
   color: var(--font-clr-default);
-  background: var(--clr-zinc-900);
+  background: var(--clr-neutral-100);
 }
