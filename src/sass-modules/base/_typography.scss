@@ -13,7 +13,7 @@
     text-align: center;
     text-transform: uppercase;
     line-height: 0.9;
-    letter-spacing: var(--font-ls-heading);
+    letter-spacing: var(--font-ls-heading-main);
 
     &-maintext {
       animation: 2s from-top;
@@ -24,7 +24,8 @@
       font-size: var(--font-sz-heading-sub);
       font-weight: 300;
       text-align: center;
-      letter-spacing: var(--font-ls-heading);
+      letter-spacing: var(--font-ls-heading-sub);
+      text-transform: none;
     }
 
     &-flipped {
@@ -36,25 +37,5 @@
       color: transparent;
       animation: 4s fade-in;
     }
-  }
-}
-
-@keyframes from-top {
-  0% {
-    transform: translateY(-10rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

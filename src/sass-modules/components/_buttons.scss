@@ -10,7 +10,10 @@
     background: var(--clr-zinc-700);
     width: 45px;
     aspect-ratio: 1;
+    opacity: 0;
     border-radius: 9999rem;
-    animation: 2s from-top;
+    animation: 2s from-right;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
   }
 }

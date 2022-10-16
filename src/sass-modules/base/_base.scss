@@ -11,8 +11,9 @@
   --font-fam-heading-main: var(--fnt-fam-ubuntusans);
   --font-fam-heading-sub: var(--fnt-fam-robotomono);
   --font-sz-heading-main: clamp(3rem, 0.7272727272727271rem + 6.0606060606060606vw, 8rem);
-  --font-sz-heading-sub: clamp(2rem, 0.18181818181818188rem + 4.848484848484849vw, 6rem);
-  --font-ls-heading: clamp(0.4rem, 0.12727272727272732rem + 0.7272727272727273vw, 1rem);
+  --font-sz-heading-sub: clamp(1.4rem, 0.9130434782608694rem + 1.7391304347826086vw, 3rem);
+  --font-ls-heading-main: clamp(0.4rem, 0.12727272727272732rem + 0.7272727272727273vw, 1rem);
+  --font-ls-heading-sub: clamp(0.1rem, -0.3090909090909091rem + 1.090909090909091vw, 1rem);
   --font-wt-heading-main: var(--fnt-wt-700);
 
   // fonts
@@ -35,6 +36,7 @@
 
   --clr-neutral-50: #{a.$neutral-50};
   --clr-neutral-100: #{a.$neutral-100};
+  --clr-neutral-200: #{a.$neutral-200};
   --clr-neutral-300: #{a.$neutral-300};
   --clr-neutral-300: #{a.$neutral-300};
   --clr-neutral-800: #{a.$neutral-800};
