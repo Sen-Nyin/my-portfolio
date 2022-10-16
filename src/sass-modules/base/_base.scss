@@ -5,11 +5,14 @@
 
   --font-fam-default: 'Poppins', sans-serif;
   --font-sz-default: 1.6rem;
-  --font-clr-default: var(--clr-zinc-900);
+  --font-clr-default: var(--clr-zinc-700);
 
-  --font-fam-heading-main: 'Open Sans', sans-serif;
-  --font-sz-heading-main: clamp(2rem, -0.7272727272727271rem + 7.2727272727272725vw, 8rem);
-  --font-wt-heading-main: var(--fnt-wt-800);
+  --font-fam-heading-main: 'Ubuntu', sans-serif;
+  --font-fam-heading-sub: 'Ubuntu Mono', monospace;
+  --font-sz-heading-main: clamp(3rem, 0.7272727272727271rem + 6.0606060606060606vw, 8rem);
+  --font-sz-heading-sub: clamp(2rem, 0.18181818181818188rem + 4.848484848484849vw, 6rem);
+  --font-ls-heading: clamp(0.4rem, 0.12727272727272732rem + 0.7272727272727273vw, 1rem);
+  --font-wt-heading-main: var(--fnt-wt-700);
 
   // fonts
 
@@ -19,7 +22,8 @@
   --fnt-wt-300: 300;
   --fnt-wt-400: 400;
   --fnt-wt-500: 500;
-  --fnt-wt-800: 800;
+  --fnt-wt-600: 600;
+  --fnt-wt-700: 700;
 
   // colours
 
@@ -31,6 +35,7 @@
   --clr-green-900: #{a.$emerald-900};
   --clr-green-600: #{a.$emerald-600};
   --clr-teal-600: #{a.$teal-600};
+  --clr-zinc-700: #{a.$zinc-700};
   --clr-zinc-800: #{a.$zinc-800};
   --clr-zinc-900: #{a.$zinc-900};
 }
