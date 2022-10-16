@@ -3,18 +3,24 @@
 :root {
   // page control
 
-  --font-fam-default: 'Poppins', sans-serif;
-  --font-sz-default: 1.6rem;
+  --font-fam-default: var(--fnt-fam-ubuntusans);
+  --font-sz-default: var(--fnt-sz-m);
   --font-clr-default: var(--clr-zinc-700);
+  --bg-clr-body: var(--clr-neutral-50);
 
-  --font-fam-heading-main: 'Ubuntu', sans-serif;
-  --font-fam-heading-sub: 'Ubuntu Mono', monospace;
+  --font-fam-heading-main: var(--fnt-fam-ubuntusans);
+  --font-fam-heading-sub: var(--fnt-fam-robotomono);
   --font-sz-heading-main: clamp(3rem, 0.7272727272727271rem + 6.0606060606060606vw, 8rem);
   --font-sz-heading-sub: clamp(2rem, 0.18181818181818188rem + 4.848484848484849vw, 6rem);
   --font-ls-heading: clamp(0.4rem, 0.12727272727272732rem + 0.7272727272727273vw, 1rem);
   --font-wt-heading-main: var(--fnt-wt-700);
 
   // fonts
+
+  --fnt-fam-ubuntusans: 'Ubuntu', sans-serif;
+  --fnt-fam-ubuntumono: 'Ubuntu Mono', monospace;
+  --fnt-fam-poppoinssans: 'Poppins', sans-serif;
+  --fnt-fam-robotomono: 'Roboto Mono', monospace;
 
   font-size: 62.5%;
   --fnt-sz-s: 1.4rem;
@@ -47,5 +53,5 @@ body {
   font-family: var(--font-fam-default);
   font-size: var(--font-sz-default);
   color: var(--font-clr-default);
-  background: var(--clr-neutral-100);
+  background: var(--clr-neutral-50);
 }
