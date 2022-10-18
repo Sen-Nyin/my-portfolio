@@ -1,12 +1,11 @@
+@use '../abstract/' as a;
+
 .btn {
   cursor: pointer;
 
   &--main-menu {
     display: grid;
     place-items: center;
-    position: fixed;
-    right: 2rem;
-    top: 2rem;
     background: var(--clr-neutral-50);
     width: 45px;
     aspect-ratio: 1;
@@ -16,5 +15,9 @@
     animation-delay: 1s;
     animation-fill-mode: forwards;
     z-index: 1000;
+
+    @include a.breakpoint(md, min) {
+      display: none;
+    }
   }
 }

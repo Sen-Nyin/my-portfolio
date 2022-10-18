@@ -3,12 +3,13 @@
 :root {
   // page control
 
-  --font-fam-default: var(--fnt-fam-ubuntusans);
+  --font-fam-default: var(--fnt-fam-robotosans);
   --font-sz-default: var(--fnt-sz-m);
   --font-clr-default: var(--clr-zinc-700);
   --bg-clr-body: var(--clr-neutral-50);
 
-  --font-fam-heading-main: var(--fnt-fam-ubuntusans);
+  // --font-fam-heading-main: var(--fnt-fam-ubuntusans);
+  --font-fam-heading-main: var(--fnt-fam-poppoinssans);
   --font-fam-heading-sub: var(--fnt-fam-robotomono);
   --font-sz-heading-main: clamp(3rem, 0.7272727272727271rem + 6.0606060606060606vw, 8rem);
   --font-sz-heading-sub: clamp(1.4rem, 0.9130434782608694rem + 1.7391304347826086vw, 3rem);
@@ -22,6 +23,8 @@
   --fnt-fam-ubuntumono: 'Ubuntu Mono', monospace;
   --fnt-fam-poppoinssans: 'Poppins', sans-serif;
   --fnt-fam-robotomono: 'Roboto Mono', monospace;
+  --fnt-fam-robotosans: 'Roboto', sans-serif;
+  --fnt-fam-grotesquesans: 'Space Grotesk', sans-serif;
 
   font-size: 62.5%;
   --fnt-sz-s: 1.4rem;
@@ -39,6 +42,9 @@
   --clr-neutral-200: #{a.$neutral-200};
   --clr-neutral-300: #{a.$neutral-300};
   --clr-neutral-300: #{a.$neutral-300};
+  --clr-neutral-400: #{a.$neutral-400};
+  --clr-neutral-500: #{a.$neutral-500};
+  --clr-neutral-600: #{a.$neutral-600};
   --clr-neutral-800: #{a.$neutral-800};
   --clr-green-900: #{a.$emerald-900};
   --clr-green-600: #{a.$emerald-600};
@@ -46,6 +52,7 @@
   --clr-zinc-700: #{a.$zinc-700};
   --clr-zinc-800: #{a.$zinc-800};
   --clr-zinc-900: #{a.$zinc-900};
+  --clr-rose-400: #{a.$rose-400};
 }
 
 body {
