@@ -7,6 +7,22 @@
   --font-sz-default: var(--fnt-sz-m);
   --font-clr-default: var(--clr-zinc-700);
   --bg-clr-body: var(--clr-neutral-50);
+  --border-radius: var(--size-50);
+
+  // nav control
+  --nav-menu-spacing: var(--size-300);
+  --nav-item-spacing-mobile: var(--size-800);
+  --nav-item-spacing: var(--size-500);
+  --nav-from-screen-edge: var(--size-200);
+  --nav-list-from-nav-edge: var(--size-100);
+  --nav-bg-clr-mobile: var(--clr-rose-400);
+  --nav-fnt-clr-mobile: var(--clr-neutral-50);
+  --nav-bg-clr-desktop: var(--clr-neutral-50);
+  --nav-fnt-clr-desktop: var(--clr-zinc-900);
+  --nav-hover-bg-clr-mobile: var(--clr-neutral-50);
+  --nav-hover-fnt-clr-mobile: var(--clr-zinc-900);
+  --nav-hover-bg-clr-desktop: var(--clr-rose-400);
+  --nav-hover-fnt-clr-desktop: var(--clr-neutral-50);
 
   // --font-fam-heading-main: var(--fnt-fam-ubuntusans);
   --font-fam-heading-main: var(--fnt-fam-poppoinssans);
@@ -53,6 +69,25 @@
   --clr-zinc-800: #{a.$zinc-800};
   --clr-zinc-900: #{a.$zinc-900};
   --clr-rose-400: #{a.$rose-400};
+
+  // sizing
+
+  --size-50: 0.5rem;
+  --size-100: 1rem;
+  --size-150: 1.5rem
+  --size-200: 2rem;
+  --size-250: 2.5rem;
+  --size-300: 3rem;
+  --size-350: 3.5rem;
+  --size-400: 4rem;
+  --size-450: 4.5rem;
+  --size-500: 5rem;
+  --size-550: 5.5rem;
+  --size-600: 6rem;
+  --size-650: 6.5rem;
+  --size-700: 7rem;
+  --size-750: 7.5rem;
+  --size-800: 8rem;
 }
 
 body {
