@@ -2,8 +2,8 @@
 
 .main-menu {
   position: fixed;
-  right: var(--nav-from-screen-edge);
-  top: var(--nav-from-screen-edge);
+  right: 2rem;
+  top: 2rem;
   z-index: 500;
 
   display: flex;
@@ -20,8 +20,8 @@
     order: 2;
 
     position: absolute;
-    right: var(--nav-list-from-nav-edge);
-    top: var(--nav-list-from-nav-edge);
+    right: 1rem;
+    top: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -71,8 +71,8 @@
   &__link {
     text-transform: uppercase;
     display: inline-block;
-    padding-block: var(--size-1);
-    padding-inline: var(--size-2);
+    padding-block: var(--size-100);
+    padding-inline: var(--size-300);
     width: 100%;
     border-radius: var(--border-radius);
     letter-spacing: 2px;
@@ -85,7 +85,7 @@
       color: var(--nav-hover-fnt-clr-mobile);
 
       @include a.breakpoint(md, min) {
-        background: var(--nav-hover-bg-desktop);
+        background: var(--nav-hover-bg-clr-desktop);
         color: var(--nav-hover-fnt-clr-desktop);
       }
     }
