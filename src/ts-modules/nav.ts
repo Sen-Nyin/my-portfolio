@@ -1,11 +1,11 @@
 class Nav {
-  #menuBtn = document.querySelector('[data-main-menu]');
+  #menuBtn = document.querySelector('[data-main-menu]') as HTMLButtonElement;
 
-  addMenuButtonHandler(handler) {
+  addMenuButtonHandler(handler: Function): void {
     this.#menuBtn.addEventListener('click', handler.bind(this));
   }
 
-  toggleNav() {
+  toggleNav(): void {
     this.#menuBtn.ariaExpanded = this.#menuBtn.ariaExpanded === 'true' ? 'false' : 'true';
   }
 }

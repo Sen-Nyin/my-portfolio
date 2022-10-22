@@ -1,5 +1,5 @@
 import './styles.scss';
-import nav from './js-modules/nav';
+import nav from './ts-modules/nav';
 
 (() => {
   nav.addMenuButtonHandler(nav.toggleNav);
