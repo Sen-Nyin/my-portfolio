@@ -2,5 +2,6 @@ import './styles.scss';
 import nav from './ts-modules/nav';
 
 (() => {
-  nav.addMenuButtonHandler(nav.toggleNav);
+  nav.handleMenuBtnClick(nav.eventMenuBtnClick);
+  nav.handleNavLinkClick(nav.eventNavLinkClick);
 })();
