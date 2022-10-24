@@ -8,6 +8,8 @@
     <title>Leon Lonsdale</title>
   </head>
   <body>
+    <!-- Main Nav -->
+
     <nav data-nav-main class="main-menu">
       <button aria-expanded="false" data-main-menu class="btn btn--main-menu">
         <p class="visually-hidden">Menu</p>
@@ -15,7 +17,7 @@
       </button>
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="">Stack</a>
+          <a class="main-menu__link" href="#stack">Stack</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="">Projects</a>
@@ -29,8 +31,10 @@
       </ul>
     </nav>
 
+    <!-- Header -->
+
     <header class="header">
-      <div class="wrapper">
+      <div class="header__container">
         <div class="header-title">
           <h1 class="heading--main heading--main-maintext">
             Leon Lonsdale<span class="heading--main-subtext"
@@ -45,9 +49,47 @@
         </div>
         <p class="header__blurb">I build stuff. Elegant, clean, responsive stuff.</p>
       </div>
-      <p class="under-construction">Under Construction</p>
     </header>
-    <main class="main"></main>
+
+    <!-- Mains -->
+
+    <main class="main">
+      <section data-stack id="stack" class="stack">
+        <h2 class="heading--section">Stack</h2>
+        <article data-stack-grid class="stack__grid">
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#html5"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#css3"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#sass"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#tailwindcss"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#bootstrap"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#javascript"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#typescript"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#webpack"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#eslint"></use>
+          </svg>
+          <svg class="stack__icon">
+            <use href="assets/sprite.svg#npm"></use>
+          </svg>
+        </article>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>

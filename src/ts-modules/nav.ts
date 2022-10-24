@@ -7,18 +7,8 @@ class Nav {
     this.#menuBtn.addEventListener('click', handler.bind(this));
   }
 
-  handleNavLinkClick(handler: Function): void {
-    this.#parentElement.addEventListener('click', handler.bind(this));
-  }
-
   eventMenuBtnClick(): void {
     this.#menuBtn.ariaExpanded = this.#menuBtn.ariaExpanded === 'true' ? 'false' : 'true';
-  }
-
-  eventNavLinkClick(e: Event): void {
-    e.preventDefault();
-    const target = e.target as HTMLElement;
-    if (target.nodeName !== 'A') return;
   }
 }
 

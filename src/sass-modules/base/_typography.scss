@@ -47,4 +47,11 @@
       animation: 4s fade-in;
     }
   }
+  &--section {
+    align-self: start;
+    font-size: var(--size-350);
+    font-weight: var(--fnt-wt-700);
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

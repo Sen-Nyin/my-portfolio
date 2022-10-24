@@ -1,0 +1,28 @@
+section {
+  padding-block: 10rem;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  place-items: center;
+}
+
+.stack {
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+    gap: 5rem;
+  }
+
+  &__icon {
+    width: 10rem;
+    aspect-ratio: 1;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}

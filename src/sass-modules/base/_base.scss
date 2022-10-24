@@ -103,3 +103,10 @@ body {
   color: var(--font-clr-default);
   background: var(--clr-neutral-50);
 }
+
+.header, .main, .footer {
+  display: grid;
+  grid-template-columns: min(95vw, 111rem);
+  justify-content: center;
+
+}
