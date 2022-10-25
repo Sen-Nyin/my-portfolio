@@ -16,7 +16,7 @@
     animation-fill-mode: forwards;
     z-index: 1000;
 
-    @include a.breakpoint(md, min) {
+    @include a.breakpoint(lg, min) {
       display: none;
     }
   }

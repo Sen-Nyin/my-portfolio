@@ -1,24 +1,35 @@
 @use '../abstract/' as a;
 
 .section {
-  padding: 8rem 3rem 20rem;
+  min-height: 100vh;
+  align-content: center;
+  &__article {
+    padding: 8rem 3rem;
 
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
 
-  text-align: center;
+    text-align: center;
 
-  @include a.breakpoint(lg, min) {
-    flex-direction: row;
-    gap: 20rem;
-    text-align: left;
+    @include a.breakpoint(lg, min) {
+      flex-direction: row;
+      gap: 20rem;
+      text-align: left;
+    }
   }
   &__header {
+    order: 0;
     display: grid;
     gap: 5rem;
     align-items: start;
     min-width: 40rem;
+  }
+  &__content {
+    @include a.breakpoint(md, max) {
+      order: 1;
+    }
   }
 }

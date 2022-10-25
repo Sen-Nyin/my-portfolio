@@ -9,21 +9,26 @@
   --font-clr-default: var(--clr-zinc-600);
   --bg-clr-body: var(--clr-neutral-50);
   --border-radius: var(--size-50);
-  --clr-primary: var(--clr-rose-400);
+  --clr-primary: var(--clr-sky-500);
 
   // nav control
   --nav-menu-spacing: var(--size-300);
   --nav-item-spacing-mobile: var(--size-800);
-  --nav-item-spacing: var(--size-500);
-  --nav-bg-clr-mobile: var(--clr-rose-400);
+  --nav-item-spacing: var(--size-50);
+  --nav-bg-clr-mobile: var(--clr-primary);
   --nav-fnt-clr-mobile: var(--clr-neutral-50);
-  --nav-bg-clr-desktop: var(--clr-neutral-50);
-  --nav-fnt-clr-desktop: var(--clr-zinc-900);
+  --nav-bg-clr-desktop: var(--clr-zinc-800);
+  --nav-fnt-clr-desktop: var(--clr-primary);
   --nav-hover-bg-clr-mobile: var(--clr-neutral-50);
   --nav-hover-fnt-clr-mobile: var(--clr-zinc-900);
-  --nav-hover-bg-clr-desktop: var(--clr-rose-400);
+  --nav-hover-bg-clr-desktop: var(--clr-primary);
   --nav-hover-fnt-clr-desktop: var(--clr-neutral-50);
   --nav-link-fnt-size: var(--fnt-sz-s);
+
+  // footer
+
+  --footer-bg-clr: var(--clr-zinc-800);
+  --footer-fnt-clr: var(--clr-primary);
 
   // --font-fam-heading-main: var(--fnt-fam-ubuntusans);
   --font-fam-heading-sub: var(--fnt-fam-robotomono);
@@ -66,11 +71,12 @@
   --clr-green-900: #{a.$emerald-900};
   --clr-green-600: #{a.$emerald-600};
   --clr-teal-600: #{a.$teal-600};
-    --clr-zinc-600: #{a.$zinc-600};
+  --clr-zinc-600: #{a.$zinc-600};
   --clr-zinc-700: #{a.$zinc-700};
   --clr-zinc-800: #{a.$zinc-800};
   --clr-zinc-900: #{a.$zinc-900};
   --clr-rose-400: #{a.$rose-400};
+  --clr-sky-500: #{a.$sky-500};
 
   // sizing
 
@@ -107,7 +113,7 @@ body {
   background: var(--clr-neutral-100);
 }
 
-.header, .main, .footer {
+.header, .section, .footer {
   display: grid;
   grid-template-columns: min(95vw, 130rem);
   justify-content: center;

@@ -1,7 +1,13 @@
 .header {
   align-items: center;
-  min-height: 85vh;
+  min-height: 100vh;
   padding: 1rem;
+  background-image: linear-gradient(to right bottom, (rgba(0, 0, 0, 0.9)), (rgba(0, 0, 0, 0.6))),
+    url(assets/headerbg.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
   &__container {
     display: grid;
@@ -19,6 +25,6 @@
     letter-spacing: 3px;
     text-align: center;
     line-height: 4rem;
-    color: var(--clr-neutral-400);
+    color: var(--clr-neutral-200);
   }
 }

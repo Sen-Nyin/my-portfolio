@@ -11,7 +11,7 @@
   align-items: flex-end;
   gap: var(--nav-menu-spacing);
 
-  @include a.breakpoint(md, min) {
+  @include a.breakpoint(lg, min) {
     flex-direction: row;
     align-items: center;
     right: 0;
@@ -42,10 +42,11 @@
 
     background: var(--nav-bg-clr-mobile);
     border-radius: var(--border-radius);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 
-    @include a.breakpoint(md, max) {
+    @include a.breakpoint(lg, max) {
       @at-root .btn--main-menu[aria-expanded='true'] ~ #{&} {
         width: calc(100vw - 6rem);
         height: calc(100vh - 6rem);
@@ -54,7 +55,7 @@
       }
     }
 
-    @include a.breakpoint(md, min) {
+    @include a.breakpoint(lg, min) {
       right: 0;
       top: 0;
       flex-direction: row;
@@ -67,6 +68,7 @@
       color: var(--nav-fnt-clr-desktop);
 
       background: var(--nav-bg-clr-desktop);
+      border-radius: 0;
       opacity: 1;
     }
   }
@@ -74,7 +76,7 @@
   &__item {
     min-width: 100%;
 
-    @include a.breakpoint(md, min) {
+    @include a.breakpoint(lg, min) {
       min-width: max-content;
     }
   }
@@ -95,7 +97,7 @@
       background: var(--nav-hover-bg-clr-mobile);
       color: var(--nav-hover-fnt-clr-mobile);
 
-      @include a.breakpoint(md, min) {
+      @include a.breakpoint(lg, min) {
         background: var(--nav-hover-bg-clr-desktop);
         color: var(--nav-hover-fnt-clr-desktop);
       }
