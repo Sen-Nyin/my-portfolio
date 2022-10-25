@@ -28,7 +28,7 @@
     min-width: 40rem;
   }
   &__content {
-    @include a.breakpoint(md, max) {
+    @include a.breakpoint(lg, max) {
       order: 1;
     }
   }
