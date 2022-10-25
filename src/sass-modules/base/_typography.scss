@@ -5,16 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .heading {
+  font-family: var(--font-fam-headings);
   &--main {
     display: grid;
     gap: 1rem;
     position: relative;
 
-    font-family: var(--font-fam-heading-main);
+    font-family: var(--font-fam-headings);
     font-size: var(--font-sz-heading-main);
     font-weight: var(--font-wt-heading-main);
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     line-height: 0.9;
     letter-spacing: var(--font-ls-heading-main);
 
@@ -47,11 +48,17 @@
       animation: 4s fade-in;
     }
   }
-  &--section {
+  &-section {
     align-self: start;
-    font-size: var(--size-350);
+    font-family: var(--font-fam-headings);
+    font-size: var(--size-500);
     font-weight: var(--fnt-wt-700);
-    text-align: center;
-    text-transform: uppercase;
+  }
+  &-keyword {
+    color: var(--clr-primary);
+  }
+  &__footer {
+    font-weight: var(--fnt-wt-700);
+    font-size: 1.8rem;
   }
 }

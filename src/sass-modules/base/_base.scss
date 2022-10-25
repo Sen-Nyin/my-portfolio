@@ -4,10 +4,12 @@
   // page control
 
   --font-fam-default: var(--fnt-fam-robotosans);
+  --font-fam-headings: vaR(--fnt-fam-poppoinssans);
   --font-sz-default: var(--fnt-sz-m);
-  --font-clr-default: var(--clr-zinc-700);
+  --font-clr-default: var(--clr-zinc-600);
   --bg-clr-body: var(--clr-neutral-50);
   --border-radius: var(--size-50);
+  --clr-primary: var(--clr-rose-400);
 
   // nav control
   --nav-menu-spacing: var(--size-300);
@@ -24,13 +26,12 @@
   --nav-link-fnt-size: var(--fnt-sz-s);
 
   // --font-fam-heading-main: var(--fnt-fam-ubuntusans);
-  --font-fam-heading-main: var(--fnt-fam-poppoinssans);
   --font-fam-heading-sub: var(--fnt-fam-robotomono);
   --font-sz-heading-main: clamp(3rem, 0.7272727272727271rem + 6.0606060606060606vw, 8rem);
   --font-sz-heading-sub: clamp(1.4rem, 0.9130434782608694rem + 1.7391304347826086vw, 3rem);
   --font-ls-heading-main: clamp(0.4rem, 0.12727272727272732rem + 0.7272727272727273vw, 1rem);
   --font-ls-heading-sub: clamp(0.1rem, -0.3090909090909091rem + 1.090909090909091vw, 1rem);
-  --font-wt-heading-main: var(--fnt-wt-700);
+  --font-wt-heading-main: var(--fnt-wt-600);
 
   // fonts
 
@@ -49,6 +50,7 @@
   --fnt-wt-500: 500;
   --fnt-wt-600: 600;
   --fnt-wt-700: 700;
+  --fnt-wt-900: 900;
 
   // colours
 
@@ -64,6 +66,7 @@
   --clr-green-900: #{a.$emerald-900};
   --clr-green-600: #{a.$emerald-600};
   --clr-teal-600: #{a.$teal-600};
+    --clr-zinc-600: #{a.$zinc-600};
   --clr-zinc-700: #{a.$zinc-700};
   --clr-zinc-800: #{a.$zinc-800};
   --clr-zinc-900: #{a.$zinc-900};
@@ -101,12 +104,12 @@ body {
   font-family: var(--font-fam-default);
   font-size: var(--font-sz-default);
   color: var(--font-clr-default);
-  background: var(--clr-neutral-50);
+  background: var(--clr-neutral-100);
 }
 
 .header, .main, .footer {
   display: grid;
-  grid-template-columns: min(95vw, 111rem);
+  grid-template-columns: min(95vw, 130rem);
   justify-content: center;
 
 }
