@@ -13,7 +13,7 @@
 
   // nav control
   --nav-menu-spacing: var(--size-300);
-  --nav-item-spacing-mobile: var(--size-800);
+  --nav-item-spacing-mobile: var(--size-400);
   --nav-item-spacing: var(--size-50);
   --nav-bg-clr-mobile: var(--clr-primary);
   --nav-fnt-clr-mobile: var(--clr-neutral-50);
@@ -30,13 +30,15 @@
   --footer-bg-clr: var(--clr-zinc-800);
   --footer-fnt-clr: var(--clr-primary);
 
-  // --font-fam-heading-main: var(--fnt-fam-ubuntusans);
+  // headings;
   --font-fam-heading-sub: var(--fnt-fam-robotomono);
-  --font-sz-heading-main: clamp(3rem, 0.7272727272727271rem + 6.0606060606060606vw, 8rem);
+  --font-sz-heading-main: clamp(4rem, 2.1818181818181817rem + 4.848484848484849vw, 8rem);
   --font-sz-heading-sub: clamp(1.4rem, 0.9130434782608694rem + 1.7391304347826086vw, 3rem);
   --font-ls-heading-main: clamp(0.4rem, 0.12727272727272732rem + 0.7272727272727273vw, 1rem);
   --font-ls-heading-sub: clamp(0.1rem, -0.3090909090909091rem + 1.090909090909091vw, 1rem);
-  --font-wt-heading-main: var(--fnt-wt-600);
+  --font-wt-heading-main: var(--fnt-wt-700);
+  --font-sz-heading-section: clamp(3rem, 2.090909090909091rem + 2.4242424242424243vw, 5rem);
+  --font-wt-heading-section: var(--fnt-wt-700);
 
   // fonts
 
